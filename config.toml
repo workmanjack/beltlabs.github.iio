@@ -1,5 +1,5 @@
 title = "Belt Labs"
-baseURL = "https://beltlabs.com"
+baseURL = "http://www.beltlabs.com"
 languageCode = "en-us"
 theme = "gohugo-theme-ananke"
 themesDir = "themes"
