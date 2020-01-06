@@ -50,8 +50,8 @@ URL = "plugins/wow/wow.min.js"
   weight = 1
 
   [[menu.main]]
-  name = "Sign Up"
-  URL = "signup"
+  name = "Join Us"
+  URL = "joinus"
   weight = 2
 
 #  [[menu.main]]

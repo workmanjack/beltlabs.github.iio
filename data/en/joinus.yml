@@ -1,14 +1,14 @@
-############################# About ###################################
-about:
+############################# Sign Up ###################################
+joinus:
   enable : true
-  title : What's BELT?
+  title : Join Us
   about_Item :
   - icon : ti-ruler-pencil # themify icon pack : https://themify.me/themify-icons
-    title : Running Happy
+    title : On The Beach
     content :
 
   - icon : ti-cup # themify icon pack : https://themify.me/themify-icons
-    title : On The Beach
+    title : Running Happy
     content :
 
   - icon : ti-thought # themify icon pack : https://themify.me/themify-icons
