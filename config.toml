@@ -10,9 +10,9 @@ summaryLength = "15"
 disqusShortname = "" # get your shortname form here : https://disqus.com
 # default content language
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 # disable language
-disableLanguages = []
+disableLanguages = ["fr"]
 
 ############################# Plugins ##########################
 # css plugins
