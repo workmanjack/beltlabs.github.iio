@@ -1,210 +1,230 @@
-################################# Default configuration ###################
-baseURL = "http://www.beltlabs.com"
+# Main config file for icon theme.
+theme = "hugo-icon"
+baseURL = "https://www.beltlabs.com/"
+languageCode = "en-US"
 title = "BELT Labs"
-theme = "airspace-hugo"
-# post pagination
-paginate = "4"
-# post excerpt
-summaryLength = "30"
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
-# default content language
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
-# disable language
-disableLanguages = ["fr"]
 
-
-############################# Plugins ##############################
-[params.plugins]
-
-  # CSS Plugins
-  [[params.plugins.css]]
-  link = "plugins/bootstrap/bootstrap.min.css"
-  [[params.plugins.css]]
-  link = "plugins/Ionicons/css/ionicons.min.css"
-  [[params.plugins.css]]
-  link = "plugins/magnific-popup/magnific-popup.css"
-  [[params.plugins.css]]
-  link = "plugins/slick/slick.css"
-
-  # JS Plugins
-  [[params.plugins.js]]
-  link = "plugins/jQuery/jquery.min.js"
-  [[params.plugins.js]]
-  link = "plugins/bootstrap/bootstrap.min.js"
-  [[params.plugins.js]]
-  link = "plugins/slick/slick.min.js"
-  [[params.plugins.js]]
-  link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
-  [[params.plugins.js]]
-  link = "plugins/shuffle/shuffle.min.js"
-  [[params.plugins.js]]
-  link = "plugins/google-map/gmap.js"
-
-
-############################## navigation ###############################
-[menu]
-
-  # main menu
-  [[menu.main]]
-  name = "About"
-  URL = "about"
-  weight = 1
-
-  [[menu.main]]
-  name = "Project"
-  URL = "project"
-  weight = 2
-
-  [[menu.main]]
-  name = "Service"
-  URL = "service"
-  weight = 3
-
-  [[menu.main]]
-  name = "Blog"
-  URL = "blog"
-  weight = 4
-
-  [[menu.main]]
-  weight = 5
-  name = "Pages"
-  hasChildren = true
-
-    [[menu.main]]
-    parent = "Pages"
-    name = "FAQ"
-    URL = "faq"
-
-    [[menu.main]]
-    parent = "Pages"
-    name = "Pricing"
-    URL = "pricing"
-
-  [[menu.main]]
-  name = "Contact"
-  URL = "contact"
-  weight = 6
-
-
-  # footer menu
-  [[menu.footer]]
-  name = "About"
-  URL = "about"
-  weight = 1
-
-  [[menu.footer]]
-  name = "Project"
-  URL = "project"
-  weight = 2
-
-  [[menu.footer]]
-  name = "Service"
-  URL = "service"
-  weight = 3
-
-  [[menu.footer]]
-  name = "Pricing"
-  URL = "pricing"
-  weight = 4
-
-  [[menu.footer]]
-  name = "FAQ"
-  URL = "faq"
-  weight = 5
-
-  [[menu.footer]]
-  name = "Contact"
-  URL = "contact"
-  weight = 6
-
-
-#################### default parameters ################################
+# Metadata
 [params]
-logo = "images/belt_logo.png"
-home = "Home"
-# Meta data
-description = "test"
-author = "Themefisher"
-# Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "North Main Street,Brooklyn Australia"
-# contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
-# Google Analitycs
-google_analitycs_id = "Your ID"
+  author = "Jack Workman"
+  description = "BELT Labs"
 
-  # Preloader
-  [params.preloader]
+# Hero section (from here on is for icon theme)
+[params.hero]
+  img = "images/belt_beach-sunset2.png"
+  title = "Running Reimagined"
+  description = "BELT: Beach Ecstasy at Low Tide"
+
+# Navigation section
+[params.nav]
+  mission = "Our Mission"
+  services = "Services"
+  team = "The Team"
+  contact = "Get In Touch"
+  # Include logo instead if HOME:
+  logo = "images/belt_logo.png"
+
+# Mission section
+[params.mission]
   enable = true
-  preloader = "" # use .png , .svg or .gif format
 
-  # search
-  [params.search]
+  [params.mission.images]
+    enable = true
+
+    [[params.mission.images.list]]
+      img = "images/img_3.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_2.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_1.jpg"
+    [[params.mission.images.list]]
+      img = "images/img_4.jpg"
+
+  [[params.mission.item]]
+    weight = 1
+    name = "marketing"
+    title = "Marketing"
+    subtitle = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate laborum sapiente officiis molestiaea."
+    description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid aperiam eveniet officia molestiae temporibus beatae dolores dignissimos aspernatur eius doloremque ad, eaque pariatur, repellendus illum, nostrum velit necessitatibus molestias.</p><ul class='checked'><li>Web Development</li><li>User Interface Experts</li><li>Pixel Perfect Design</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+
+  [[params.mission.item]]
+    weight = 2
+    name = "analysis"
+    title = "Resources"
+    subtitle = "Quam quasi illum expedita dicta nemo fugit reprehenderit similique! Corporis praesentium magnam sequi."
+    description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla explicabo, molestiae eaque fugiat dolores est esse, doloremque placeat assumenda corrupti officia dolorum. Sunt saepe ut, explicabo consectetur, nostrum illo est.</p><ul class='checked'><li>Free HTML5 Templates</li><li>Free Bootstrap Templates</li><li>Free HTML5 Bootstrap Templates</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+
+  [[params.mission.item]]
+    weight = 3
+    name = "strategy"
+    title = "Strategy"
+    subtitle = "Magnam iste obcaecati illo laboriosam amet. Dignissimos sed quis voluptatum corporis adipisci amet."
+    description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore illum expedita placeat debitis, dignissimos obcaecati et modi. Possimus id dicta consequuntur veritatis, reiciendis at expedita voluptate sint distinctio eligendi!</p><ul class='checked'><li>Web Development</li><li>User Interface Experts</li><li>Pixel Perfect Design</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
+
+# Services section
+[params.services]
+  enable = true
+  video = true
+  vidlink = "https://vimeo.com/channels/staffpicks/93951774"
+  title = "Our Services"
+  description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+  [[params.services.item]]
+    icon = "icon-present"
+    title = "Web Development"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+  [[params.services.item]]
+    icon = "icon-eye"
+    title = "Retina Ready"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+  [[params.services.item]]
+    icon = "icon-paper-plane"
+    title = "Light Speed"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+  [[params.services.item]]
+    icon = "icon-pencil"
+    title = "Copyrighting"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+  [[params.services.item]]
+    icon = "icon-rocket"
+    title = "Load Fast"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+  [[params.services.item]]
+    icon = "icon-support"
+    title = "Customer Support"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+
+# Work section
+[params.work]
   enable = true
 
-  # Navigation get start button
-  [params.nav_button]
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_1.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_2.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_3.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_2.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_3.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_2.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_3.jpg"
+
+  [[params.work.item]]
+    title = "Consectetur adipisicing"
+    subtitle = "Web Design"
+    img = "images/img_4.jpg"
+
+# Team section
+[params.team]
   enable = true
-  label = "Get A Quote"
-  link = "contact"
+  title = "Meet The Team"
+  description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
 
-  # google map
-  [params.gmap]
+  [[params.team.item]]
+    name = "Jean Doe"
+    position = "Chief legend"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/person1.jpg"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    linkedin = "#"
+    whatsapp = "#"
+
+  [[params.team.item]]
+    name = "Alice Doe"
+    position = "Chief overlord"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/person2.jpg"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    whatsapp = "#"
+
+  [[params.team.item]]
+    name = "John Doe"
+    position = "Chief haranguer"
+    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+    img = "images/person3.jpg"
+    email = "#"
+    telephone = "#"
+    facebook = "#"
+    twitter = "#"
+    dribbble = "#"
+    instagram = "#"
+    github = "#"
+    whatsapp = "#"
+
+  # [[params.team.item]]
+  #   name = "Jason Doe"
+  #   position = "Chief haranguer"
+  #   description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+  #   img = "images/person3.jpg"
+  #   email = "#"
+  #   telephone = "#"
+  #   facebook = "#"
+  #   twitter = "#"
+  #   dribbble = "#"
+  #   instagram = "#"
+  #   github = "#"
+  #   whatsapp = "#"
+
+# Contact section
+[params.contact]
   enable = true
-  gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-  map_latitude = "51.5223477"
-  map_longitude = "-0.1622023"
-  map_marker = "images/marker.png"
+  title = "Get In Touch"
+  message = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
+  name_placeholder = "Your name"
+  email_placeholder = "Your email"
+  email_disclaimer = "We'll never share your email with anyone else."
+  message_placeholder = "Please enter a message."
+  button_text = "Submit"
 
-
-############################# social site ########################
-[[params.social]]
-icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-
-################################# language ################################
-[Languages]
-
-  ################################ English Language ########################
-  [Languages.en]
-  languageName = "En"
-  languageCode = "en-us"
-  contentDir = "content/english"
-  weight = 1
-  home = "Home"
-  # copyright
-  copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
-
-  ################################ France Language ########################
-  [Languages.fr]
-  languageName = "Fr"
-  languageCode = "fr-fr"
-  contentDir = "content/french"
-  weight = 2
-  home = "Accueil"
-  # copyright
-  copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
+# Footer section
+# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
+[params.footer]
+  enable = true
+  note = "<p><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a></small></p>"
+  github = "#"
+  twitter = "#"
+  facebook = "#"
+  vine = "#"
+  linkedin = "#"
+  instagram = "#"
