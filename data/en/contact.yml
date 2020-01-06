@@ -3,23 +3,23 @@ contact:
   enable : true
   title : Contact Us
   subtitle : Contact Details
-  content : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, vero, provident, eum eligendi blanditiis ex explicabo vitae nostrum facilis asperiores dolorem illo officiis ratione vel fugiat dicta laboriosam labore adipisci.
+  content : Questions, comments, or concerns? Please reach out and we'll do our best to get back to you in a timely fashion.
   form_Action: "#" #contact form works with https://formspree.io
   map:
-    enable : true
+    enable : false
     gmapAPI : "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
-    mapLatitude : 51.5223477
-    mapLongitude: -0.1622023
+    mapLatitude : 36.9741
+    mapLongitude: 122.0308
 
   contact_Details :
     - icon : ti-location-pin # themify icon pack : https://themify.me/themify-icons
-      info : "Khaja Road, Bayzid, Chittagong, Bangladesh"
-      
+      info : "Santa Cruz, California, United States"
+
     - icon : ti-mobile # themify icon pack : https://themify.me/themify-icons
-      info : "Phone: +880-31-000-000"
-      
+      info : "Phone: +1-111-111-1111"
+
     - icon : ti-printer # themify icon pack : https://themify.me/themify-icons
-      info : "Fax: +880-31-000-000"
-      
+      info : "Fax: +2-222-222-2222"
+
     - icon : ti-email # themify icon pack : https://themify.me/themify-icons
-      info : "Email: hello@meghna.com"
+      info : "Email: shagnar@beltlabs.com"
