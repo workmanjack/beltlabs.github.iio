@@ -1,0 +1,5 @@
+############################# feature ###################################
+feature:
+  enable : true
+  image : images/belt_lifeguard1.jpeg
+  image2 : images/belt_driftwood3_cropped.png

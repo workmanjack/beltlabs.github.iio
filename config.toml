@@ -45,8 +45,8 @@ URL = "plugins/wow/wow.min.js"
 [menu]
 
   [[menu.main]]
-  name = "Info"
-  URL = "info"
+  name = "What's BELT?"
+  URL = "about"
   weight = 1
 
   [[menu.main]]
