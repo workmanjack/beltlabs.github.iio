@@ -1,0 +1,11 @@
+############################### Banner ################################
+banner:
+  enable : true
+  bg_Image : "images/belt_beach-sunset2.png"
+  icon : "" # themify icon pack : https://themify.me/themify-icons
+  title : "Running Reimagined"
+  content : "BELT: Beach Ecstasy at Low Tide"
+  button:
+    enable : true
+    label : "Tell Me More"
+    link : "#services"
